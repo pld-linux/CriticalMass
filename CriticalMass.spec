@@ -1,12 +1,12 @@
 Summary: 	Critical Mass - space shoot'em up game
 Summary(pl):	Critical Mass - kosmiczna strzelanina
 Name:		CriticalMass
-Version:	0.97
+Version:	0.98
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/sourceforge/criticalmass/%{name}-%{version}.tar.bz2
-# Source0-md5:	b93832127bab9a43a8b98395b5a7b91b
+# Source0-md5:	af1fdb1e4156723423255a394ee8312f
 URL:		http://criticalmass.sourceforge.net/
 BuildRequires:	SDL_image-devel >= 1.2.0
 BuildRequires:	SDL_mixer-devel >= 1.2.0
@@ -57,7 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog TODO Readme.html
+%doc TODO Readme.html
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/Critical_Mass
 %{_mandir}/man6/*
