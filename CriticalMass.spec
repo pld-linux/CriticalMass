@@ -11,6 +11,7 @@ URL:		http://criticalmass.sourceforge.net/
 BuildRequires:	OpenGL-devel
 BuildRequires:	SDL_image-devel >= 1.2.0
 BuildRequires:	SDL_mixer-devel >= 1.2.0
+BuildRequires:	automake
 BuildRequires:	libogg-devel
 BuildRequires:	libpng-devel >= 1.0.12
 BuildRequires:	zlib >= 1.1.3
