@@ -1,4 +1,5 @@
-Summary: 	Critical Mass.
+Summary: 	Critical Mass - space shoot'em up game
+Summary(pl):	Critical Mass - kosmiczna strzelanina
 Name:		CriticalMass
 Version:	0.97
 Release:	1
@@ -10,16 +11,15 @@ BuildRequires:	SDL-devel >= 1.2.3
 BuildRequires:	SDL_image-devel >= 1.2.0
 BuildRequires:	SDL_mixer-devel >= 1.2.0
 BuildRequires:	OpenGL-devel
+BuildRequires:	libogg-devel
 BuildRequires:	libpng-devel >= 1.0.12
 BuildRequires:	zlib >= 1.1.3
-BuildRequires:	libogg-devel
+Requires:	OpenGL
 Requires:	SDL >= 1.2.3
 Requires:	SDL_image >= 1.2.0
 Requires:	SDL_mixer >= 1.2.0
-Requires:	zlib >= 1.1.3
 Requires:	libpng >= 1.0.12
-Requires:	OpenGL
-Requires:	libogg
+Requires:	zlib >= 1.1.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_noautoreqdep	libGL.so.1 libGLU.so.1
@@ -31,10 +31,17 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Critical Mass (Critter) is an SDL/OpenGL space shoot'em up game.
 Your world has been infested by an aggressive army of space critters.
 Overrun and unprepared, your government was unable to defend its
-precious resources. As a last effort to recapture some of the 'goodies',
-you have been placed into a tiny spacecraft and sent after them.
+precious resources. As a last effort to recapture some of the
+'goodies', you have been placed into a tiny spacecraft and sent after
+them.
  
- 
+%description -l pl
+Critical Mass (Critter) to oparta na SDL/OpenGL kosmiczna strzelanina.
+¦wiat zosta³ zaatakowany przez agresywn± armiê kosmicznych stworzeñ.
+Napadniêty i nieprzygotowany rz±d nie by³ w stanie obroniæ swoich
+zasobów. Jako ostatnia szansa na odzyskanie czê¶ci dóbr, gracz zosta³
+umieszczony w ma³ym statku kosmiczym i wys³any za kosmitami.
+
 %prep
 %setup -q
 
