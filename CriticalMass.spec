@@ -2,7 +2,7 @@ Summary:	Critical Mass - space shoot'em up game
 Summary(pl):	Critical Mass - kosmiczna strzelanina
 Name:		CriticalMass
 Version:	0.98
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/criticalmass/%{name}-%{version}.tar.bz2
