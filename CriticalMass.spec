@@ -31,7 +31,7 @@ Overrun and unprepared, your government was unable to defend its
 precious resources. As a last effort to recapture some of the
 'goodies', you have been placed into a tiny spacecraft and sent after
 them.
- 
+
 %description -l pl
 Critical Mass (Critter) to oparta na SDL/OpenGL kosmiczna strzelanina.
 ¦wiat zosta³ zaatakowany przez agresywn± armiê kosmicznych stworzeñ.
