@@ -39,7 +39,7 @@ Critical Mass (Critter) to oparta na SDL/OpenGL kosmiczna strzelanina.
 ¦wiat zosta³ zaatakowany przez agresywn± armiê kosmicznych stworzeñ.
 Napadniêty i nieprzygotowany rz±d nie by³ w stanie obroniæ swoich
 zasobów. Jako ostatnia szansa na odzyskanie czê¶ci dóbr, gracz zosta³
-umieszczony w ma³ym statku kosmiczym i wys³any za kosmitami.
+umieszczony w ma³ym statku kosmicznym i wys³any za kosmitami.
 
 %prep
 %setup -q
