@@ -5,12 +5,12 @@ Version:	0.98
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
-Source0:	http://dl.sourceforge.net/sourceforge/criticalmass/%{name}-%{version}.tar.bz2
+Source0:	http://dl.sourceforge.net/criticalmass/%{name}-%{version}.tar.bz2
 # Source0-md5:	af1fdb1e4156723423255a394ee8312f
 URL:		http://criticalmass.sourceforge.net/
+BuildRequires:	OpenGL-devel
 BuildRequires:	SDL_image-devel >= 1.2.0
 BuildRequires:	SDL_mixer-devel >= 1.2.0
-BuildRequires:	OpenGL-devel
 BuildRequires:	libogg-devel
 BuildRequires:	libpng-devel >= 1.0.12
 BuildRequires:	zlib >= 1.1.3
