@@ -1,4 +1,4 @@
-Summary: 	Critical Mass - space shoot'em up game
+Summary:	Critical Mass - space shoot'em up game
 Summary(pl):	Critical Mass - kosmiczna strzelanina
 Name:		CriticalMass
 Version:	0.98
