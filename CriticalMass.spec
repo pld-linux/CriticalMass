@@ -7,7 +7,6 @@ License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://cesnet.dl.sourceforge.net/sourceforge/criticalmass/%{name}-%{version}.tar.bz2
 URL:		http://criticalmass.sourceforge.net/
-BuildRequires:	SDL-devel >= 1.2.3
 BuildRequires:	SDL_image-devel >= 1.2.0
 BuildRequires:	SDL_mixer-devel >= 1.2.0
 BuildRequires:	OpenGL-devel
@@ -59,8 +58,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc COPYING ChangeLog TODO Readme.html
+%doc ChangeLog TODO Readme.html
 %attr(755,root,root) %{_bindir}/*
-%dir %{_datadir}/Critical_Mass
-%{_datadir}/Critical_Mass/*
-%lang(en) %{_mandir}/man6/*
+%{_datadir}/Critical_Mass
+%{_mandir}/man6/*
