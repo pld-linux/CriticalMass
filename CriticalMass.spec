@@ -43,6 +43,7 @@ umieszczony w ma³ym statku kosmicznym i wys³any za kosmitami.
 %setup -q
 
 %build
+cp -f /usr/share/automake/config.sub .
 %configure2_13
 %{__make}
 
