@@ -24,7 +24,6 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_noautoreqdep	libGL.so.1 libGLU.so.1
 
-
 %description
 Critical Mass (Critter) is an SDL/OpenGL space shoot'em up game.
 Your world has been infested by an aggressive army of space critters.
@@ -50,7 +49,8 @@ umieszczony w ma³ym statku kosmicznym i wys³any za kosmitami.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} DESTDIR=$RPM_BUILD_ROOT install
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
