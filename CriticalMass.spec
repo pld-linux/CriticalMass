@@ -5,7 +5,7 @@ Version:	0.97
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
-Source0:	http://cesnet.dl.sourceforge.net/sourceforge/criticalmass/%{name}-%{version}.tar.bz2
+Source0:	http://dl.sourceforge.net/sourceforge/criticalmass/%{name}-%{version}.tar.bz2
 # Source0-md5:	b93832127bab9a43a8b98395b5a7b91b
 URL:		http://criticalmass.sourceforge.net/
 BuildRequires:	SDL_image-devel >= 1.2.0
