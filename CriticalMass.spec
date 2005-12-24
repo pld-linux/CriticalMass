@@ -16,7 +16,7 @@ BuildRequires:	automake
 BuildRequires:	curl-devel
 BuildRequires:	libogg-devel
 BuildRequires:	libpng-devel >= 1.0.12
-BuildRequires:	zlib >= 1.1.3
+BuildRequires:	zlib-devel >= 1.1.3
 Requires:	OpenGL
 Requires:	SDL >= 1.2.3
 Requires:	SDL_image >= 1.2.0
@@ -63,6 +63,9 @@ install -d $RPM_BUILD_ROOT%{_pixmapsdir}
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 install critter.png $RPM_BUILD_ROOT%{_pixmapsdir}
+
+# this one gets installed by author's mistake
+rm -f $RPM_BUILD_ROOT%{_bindir}/Packer
 
 %clean
 rm -rf $RPM_BUILD_ROOT
