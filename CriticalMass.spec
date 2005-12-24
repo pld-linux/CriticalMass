@@ -1,17 +1,19 @@
 Summary:	Critical Mass - space shoot'em up game
 Summary(pl):	Critical Mass - kosmiczna strzelanina
 Name:		CriticalMass
-Version:	0.99
+Version:	0.9.12
 Release:	1
+Epoch:		1
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/criticalmass/%{name}-%{version}.tar.bz2
-# Source0-md5:	e9a96039dde38caaa5d25f1cdaff8a6e
+# Source0-md5:	613319a5b4930e41ef82895e14042150
 URL:		http://criticalmass.sourceforge.net/
 BuildRequires:	OpenGL-devel
 BuildRequires:	SDL_image-devel >= 1.2.0
 BuildRequires:	SDL_mixer-devel >= 1.2.0
 BuildRequires:	automake
+BuildRequires:	curl-devel
 BuildRequires:	libogg-devel
 BuildRequires:	libpng-devel >= 1.0.12
 BuildRequires:	zlib >= 1.1.3
@@ -44,15 +46,23 @@ umieszczony w ma³ym statku kosmicznym i wys³any za kosmitami.
 %setup -q
 
 %build
-cp -f /usr/share/automake/config.sub .
-%configure2_13
+sed -i 's/curl//' Makefile.am
+sed -i 's/\.\.\/curl\/lib\/libcurl\.a/\/usr\/lib\/libcurl.so/' game/Makefile.am
+sed -i 's/AC_CONFIG_SUBDIRS(curl)//' configure.in
+%{__aclocal}
+%{__autoconf}
+%{__autoheader}
+%{__automake}
+%configure
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_pixmapsdir}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+install critter.png $RPM_BUILD_ROOT%{_pixmapsdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -63,3 +73,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/Critical_Mass
 %{_mandir}/man6/*
+%{_pixmapsdir}/*
