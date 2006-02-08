@@ -1,13 +1,14 @@
 Summary:	Critical Mass - space shoot'em up game
 Summary(pl):	Critical Mass - kosmiczna strzelanina
 Name:		CriticalMass
-Version:	0.9.12
+Version:	1.0.0
 Release:	1
 Epoch:		1
-License:	GPL
+License:	GPL v2
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/criticalmass/%{name}-%{version}.tar.bz2
-# Source0-md5:	613319a5b4930e41ef82895e14042150
+# Source0-md5:	c355bdc702e87d4e12c17983db0f2afd
+Source1:	%{name}.desktop
 URL:		http://criticalmass.sourceforge.net/
 BuildRequires:	OpenGL-devel
 BuildRequires:	SDL_image-devel >= 1.2.0
@@ -60,12 +61,13 @@ sed -i 's/AC_CONFIG_SUBDIRS(curl)//' configure.in
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_pixmapsdir}
+install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_desktopdir}}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
 install critter.png $RPM_BUILD_ROOT%{_pixmapsdir}
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
 # this one gets installed by author's mistake
 rm -f $RPM_BUILD_ROOT%{_bindir}/Packer
@@ -80,3 +82,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/Critical_Mass
 %{_mandir}/man6/*
 %{_pixmapsdir}/*
+%{_desktopdir}/*
