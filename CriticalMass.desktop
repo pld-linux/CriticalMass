@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Critical Mass
+Comment=Critical Mass - space shoot'em up game
+Comment[pl]=Critical Mass - kosmiczna strzelanina
+Exec=critter
+Icon=critter.png
+Terminal=false
+Type=Application
+Categories=Game;ArcadeGame;
+Encoding=UTF-8
