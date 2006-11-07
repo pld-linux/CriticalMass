@@ -82,4 +82,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/Critical_Mass
 %{_mandir}/man6/*
 %{_pixmapsdir}/*
-%{_desktopdir}/*
+%{_desktopdir}/*.desktop
