@@ -1,5 +1,5 @@
 Summary:	Critical Mass - space shoot'em up game
-Summary(pl):	Critical Mass - kosmiczna strzelanina
+Summary(pl.UTF-8):   Critical Mass - kosmiczna strzelanina
 Name:		CriticalMass
 Version:	1.0.2
 Release:	1
@@ -38,12 +38,12 @@ precious resources. As a last effort to recapture some of the
 'goodies', you have been placed into a tiny spacecraft and sent after
 them.
 
-%description -l pl
+%description -l pl.UTF-8
 Critical Mass (Critter) to oparta na SDL/OpenGL kosmiczna strzelanina.
-¦wiat zosta³ zaatakowany przez agresywn± armiê kosmicznych stworzeñ.
-Napadniêty i nieprzygotowany rz±d nie by³ w stanie obroniæ swoich
-zasobów. Jako ostatnia szansa na odzyskanie czê¶ci dóbr, gracz zosta³
-umieszczony w ma³ym statku kosmicznym i wys³any za kosmitami.
+Åšwiat zostaÅ‚ zaatakowany przez agresywnÄ… armiÄ™ kosmicznych stworzeÅ„.
+NapadniÄ™ty i nieprzygotowany rzÄ…d nie byÅ‚ w stanie obroniÄ‡ swoich
+zasobÃ³w. Jako ostatnia szansa na odzyskanie czÄ™Å›ci dÃ³br, gracz zostaÅ‚
+umieszczony w maÅ‚ym statku kosmicznym i wysÅ‚any za kosmitami.
 
 %prep
 %setup -q
