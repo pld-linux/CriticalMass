@@ -1,5 +1,5 @@
 Summary:	Critical Mass - space shoot'em up game
-Summary(pl.UTF-8):   Critical Mass - kosmiczna strzelanina
+Summary(pl.UTF-8):	Critical Mass - kosmiczna strzelanina
 Name:		CriticalMass
 Version:	1.0.2
 Release:	1
